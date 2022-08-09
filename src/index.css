@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#tinkerjs-output::-webkit-scrollbar {
+    width: 12px;
+}
+
+#tinkerjs-output::-webkit-scrollbar-track {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#tinkerjs-output::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    box-shadow: #000000;
+    border-radius: 2px;
+    background: rgba(121, 121, 121, 0.4);
+}
+
+#tinkerjs-output::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 100, 100, 0.7);
+}
+
+#tinkerjs-output::-webkit-scrollbar-thumb:active {
+    background: rgba(191, 191, 191, 0.4);
+}
+
+#tinkerjs-output::-webkit-scrollbar-thumb:window-inactive {
+    background: #2e2e2e;
+}

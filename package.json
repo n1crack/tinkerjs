@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "productName": "my-app",
+  "name": "tinkerjs",
+  "productName": "tinkerjs",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
@@ -8,10 +8,11 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
+    "make32": "electron-forge make --platform=win32",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
-  "keywords": [],
+  "keywords": ["javascript", "js", "tinker", "console"],
   "author": {
     "name": "Yusuf",
     "email": "yusuf@ozdemir.be"
@@ -19,12 +20,14 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+         "icon": "./assets/icon"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "my_app"
+            "name": "tinkerjs"
           }
         },
         {
